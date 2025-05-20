@@ -7,12 +7,18 @@
       </div>
 
       <nav class="space-y-2">
-        <form action="" class="justify-between ">
-          <input type="text" placeholder="Pesquisar" class="p-1 rounded-tl-lg rounded-br-lg">
-          <button type="submit" class="bg-blue-400 p-1 rounded-lg">Buscar</button>
+        <form action="" class="justify-between">
+          <input
+            type="text"
+            placeholder="Pesquisar"
+            class="p-1 rounded-tl-lg rounded-br-lg"
+          />
+          <button type="submit" class="bg-blue-400 p-1 rounded-lg">
+            Buscar
+          </button>
         </form>
         <router-link
-          to="/about"
+          to="/main"
           class="sidebar-link flex items-center space-x-3 p-3 rounded-lg bg-blue-50 text-blue-600"
         >
           <svg
@@ -73,7 +79,6 @@
 
           <span>Dashboard</span>
         </a>
-       
       </nav>
     </div>
   </body>
