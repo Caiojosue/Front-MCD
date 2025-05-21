@@ -1,85 +1,79 @@
 <template>
   <body class="bg-gray-100">
-    <!-- Menu Lateral -->
-    <div class="fixed left-0 top-0 h-screen w-70 bg-yellow-300 shadow-lg p-4">
-      <div class="mb-8">
-        <h2 class="text-2xl font-bold text-gray-800">Mercado Livre</h2>
+
+    <aside class="fixed top-0 left-0 h-full w-72 bg-yellow-400 border-r border-yellow-300 shadow-lg z-50">
+      <div class="p-6">
+        <h2 class="text-2xl font-extrabold text-black">Mercado Livre</h2>
       </div>
 
-      <nav class="space-y-2">
-        <form action="" class="justify-between">
+      <div class="px-4 pb-6">
+        <form action="" class="flex gap-2">
           <input
             type="text"
             placeholder="Pesquisar"
-            class="p-1 rounded-tl-lg rounded-br-lg"
+            class="flex-1 px-3 py-2 border border-yellow-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-yellow-600 text-black placeholder-gray-700 bg-white"
           />
-          <button type="submit" class="bg-blue-400 p-1 rounded-lg">
+          <button
+            type="submit"
+            class="bg-white hover:bg-gray-100 text-yellow-600 px-4 py-2 rounded-lg text-sm transition font-semibold border border-yellow-600"
+          >
             Buscar
           </button>
         </form>
+      </div>
+
+      <nav class="px-4 space-y-2 text-black">
         <router-link
           to="/main"
-          class="sidebar-link flex items-center space-x-3 p-3 rounded-lg bg-blue-50 text-blue-600"
+          class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-yellow-300 transition"
         >
           <svg
+            class="w-5 h-5 text-black"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
             stroke="currentColor"
-            class="size-6"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184"
-            />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M3 9.75L12 4.5l9 5.25v7.5a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 17.25v-7.5z" />
           </svg>
-          <span>Produtos</span>
+          <span class="text-sm font-semibold">Produtos</span>
         </router-link>
+
         <a
-          href=""
-          class="sidebar-link flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 text-gray-600 hover:text-blue-600"
+          href="/categoria"
+          class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-yellow-300 transition"
         >
           <svg
+            class="w-5 h-5 text-black"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
             stroke="currentColor"
-            class="size-6"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122"
-            />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M4.5 6.75h15m-15 4.5h15m-15 4.5h15" />
           </svg>
-
-          <span>Categorias</span>
+          <span class="text-sm font-semibold">Categorias</span>
         </a>
+
         <a
-          href=""
-          class="sidebar-link flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 text-gray-600 hover:text-blue-600"
+          href="#"
+          class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-yellow-300 transition"
         >
           <svg
+            class="w-5 h-5 text-black"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
             stroke="currentColor"
-            class="size-6"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
-            />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M12 4.5v15m7.5-7.5h-15" />
           </svg>
-
-          <span>Dashboard</span>
+          <span class="text-sm font-semibold">Dashboard</span>
         </a>
       </nav>
-    </div>
+    </aside>
   </body>
 </template>

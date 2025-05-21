@@ -15,6 +15,12 @@ const router = createRouter({
       name: "main",
       component: MainView,
     },
+    {
+      path: "/categoria",
+      name: "categoria",
+      component: () =>
+        import("../views/CategoriaView.vue"),
+    },
   ],
 });
 
